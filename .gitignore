@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.env
+.streamlit/secrets.toml
+*.pyc
+.DS_Store
+.demo_state.json
