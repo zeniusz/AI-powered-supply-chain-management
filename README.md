@@ -21,6 +21,14 @@ The test scenario: *a transfer from a factory is delayed. Can an employee identi
 5. **Keeps an audit log** of every decision and tracks the exception until it resolves.
 6. **Optional AI assistant** that reads the selected record and proposes actions through read-only tools. It never acts without operator confirmation. Without an API key a deterministic rules provider answers instead.
 
+## AI assistant
+
+Open it from the top bar. It sees the record you have selected, answers from the live data and shows the tool it used and the evidence it retrieved. Without an API key it runs on built-in rules. With an OpenAI key it uses tool calling instead. Either way it can only read data; anything that changes a record is a proposal the operator must confirm.
+
+![AI assistant answering which orders TR-5301 affects](docs/screenshots/assistant.png)
+
+Suggested prompts include "What should I do?", "Which orders are affected?", "Draft an update for affected customers" and "Notify a store that its incoming transfer is delayed".
+
 ## Screens
 
 | | |
